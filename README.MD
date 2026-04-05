@@ -39,6 +39,9 @@ or
 sudo dnf install uv
 ```
 
+## Dataset used
+[Supermarket sales by alexhuitron and `supermarket_sales_dirty` by Claude](https://www.kaggle.com/datasets/alexhuitron/supermarket-sales)
+
 ## Input and Output
 
 **Input:** `supermarket_sales_dirty.csv` - Raw sales data with possible errors <br>
