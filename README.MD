@@ -21,10 +21,25 @@ The script processes the raw sales data and:
 ## How to use
 
 1. Place your raw sales data in `supermarket_sales_dirty.csv`
-2. Run the cleanup script
+2. Run the cleanup script using `uv`:
+   ```bash
+   uv run python cleanup.py
+   ```
 3. The cleaned data will be saved as `supermarket_sales_cleaned.csv`
+
+## Requirements
+
+This script uses `uv` for Python package management. Make sure you have `uv` installed:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+or
+```
+# Fedora based
+sudo dnf install uv
+```
 
 ## Input and Output
 
-**Input:** `supermarket_sales_dirty.csv` - Raw sales data with possible errors
+**Input:** `supermarket_sales_dirty.csv` - Raw sales data with possible errors <br>
 **Output:** `supermarket_sales_cleaned.csv` - Clean, standardized data ready for analysis

@@ -1,0 +1,4 @@
+[project]
+dependencies = [
+    "pandas>=2.0.0",
+]
