@@ -1,4 +1,9 @@
 [project]
+name = "data-cleanup"
+version = "0.1.0"
+description = "Cleans up data"
+readme = "README.md"
+requires-python = ">=3.14"
 dependencies = [
     "pandas>=2.0.0",
 ]

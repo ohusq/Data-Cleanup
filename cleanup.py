@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('./csv/supermarket_sales_dirty.csv')
+df = pd.read_csv('./datasets/supermarket_sales_dirty.csv')
 df = df.dropna().drop_duplicates()
 
 df.columns = [x.upper() for x in df.columns]
@@ -19,4 +19,4 @@ for col in text_cols:
             df[col] = df[col].str.upper()   # "A", "B", "C"
 
 df['DATE'] = pd.to_datetime(df['DATE'], errors='coerce')
-df.to_csv('./csv/supermarket_sales_cleaned.csv', index=False)
+df.to_csv('./datasets/supermarket_sales_cleaned.csv', index=False)
